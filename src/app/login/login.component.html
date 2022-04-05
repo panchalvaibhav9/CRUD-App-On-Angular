@@ -1,0 +1,37 @@
+
+<div class="login-wapper">
+  <div class="container">
+    <div class="title">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Angular_one_color_inverse_logo.svg/1200px-Angular_one_color_inverse_logo.svg.png" alt="logo" class="img">
+    </div>
+    <div class="img-container">
+      <h2>User Login</h2>
+    </div>
+      <form [formGroup]="signInForm" (ngSubmit)="onSave()">
+      <div class="form-group">
+        <div class="control-group">
+          <div class="input-prepend">
+            <input required="required" placeholder="Email" type="email" formControlName="username">
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="input-prepend">
+            <input required="required" placeholder="Password" type="password" formControlName="password2">
+          </div>          
+        </div>
+        <!-- <div class="control-group">
+          <label id="remember-me">
+            <input type="checkbox" name="data[User][remember_me]" value="1" id="UserRememberMe"> Remember Me?</label>
+        </div> -->
+        <div class="control-group">
+          <button type="submit">Login</button>
+        </div>
+        <div class="registration">
+          <a class="btn-regi" href="#registration"> User Registration</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
